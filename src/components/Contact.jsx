@@ -13,6 +13,7 @@ const Contact = () => {
     message: '',
     permission: false
   });
+  const [isSending, setIsSending] = useState(false);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -40,14 +41,14 @@ const Contact = () => {
       return;
     }
 
+    setIsSending(true);
+
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
-        method:"POST",
-        headers: {"Content-Type":"application/json",
-          Accept:"application/json",
-        },
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          access_key:"6121fad0-efc7-43d8-99fd-6eaa3e488287", 
+          access_key: "2cb434b0-224d-4e6b-9ab4-6bb091360e24",
           name: `${formData.firstName} ${formData.lastName}`,
           email: formData.email,
           phone: formData.phone,
@@ -57,7 +58,7 @@ const Contact = () => {
 
       const result = await response.json();
       if (result.success) {
-        alert(`Thanks ${formData.firstName}! Your message was sent successfully to your Gmail.`);
+        alert(`Thanks ${formData.firstName}! Your message was sent successfully.`);
         setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '', permission: false });
       } else {
         alert("Something went wrong. Please try again.");
@@ -65,6 +66,8 @@ const Contact = () => {
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Error sending message. Please try again later.");
+    } finally {
+      setIsSending(false);
     }
   };
 
@@ -189,13 +192,16 @@ const Contact = () => {
                 <div className="flex flex-col sm:flex-row sm:justify-end sm:items-end gap-6 h-full">
                   
                   <button 
-                    type="submit" 
-                    className="px-8 py-3 rounded-full border border-white/40 text-white  flex items-center justify-center gap-3 hover:bg-white hover:text-[#ff2a2a] transition-all duration-300 group whitespace-nowrap self-start sm:self-auto"
+                    type="submit"
+                    disabled={isSending}
+                    className="px-8 py-3 rounded-full border border-white/40 text-white flex items-center justify-center gap-3 hover:bg-white hover:text-[#ff2a2a] transition-all duration-300 group whitespace-nowrap self-start sm:self-auto disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Send
-                    <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    {isSending ? 'Sending...' : 'Send'}
+                    {!isSending && (
+                      <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    )}
                   </button>
                 </div>
               </div>
