@@ -88,7 +88,7 @@ const Expertise = () => {
             </svg>
           </h2>
           <p className="text-gray-500 text-base md:text-lg max-w-sm  leading-relaxed">
-            Combining full-stack development, artificial intelligence, and cloud technologies to create scalable and impactful digital experiences.
+            Building intelligent systems, computer vision algorithms, real-time voice applications, and scalable backend platforms.
           </p>
         </div>
 
@@ -170,8 +170,8 @@ const Expertise = () => {
 
           <TagCard
             number="01"
-            title="Frontend Development"
-            text="Crafting responsive and interactive user interfaces using React, Next.js, JavaScript, Tailwind CSS, and modern frontend technologies to deliver seamless user experiences."
+            title="AI & Machine Learning"
+            text="Developing multimodal diagnostics, real-time voice assistants, CNN models, and NLP solutions using TensorFlow, PyTorch, Scikit-learn, LangChain, and Whisper."
             className="md:absolute md:top-[10px] md:right-[5%] lg:right-[10%] rotate-2 md:rotate-6"
             aosType="fade-left"
             aosDelay="100"
@@ -180,8 +180,8 @@ const Expertise = () => {
           />
           <TagCard
             number="02"
-            title="Backend Development"
-            text="Building secure REST APIs, authentication systems, server-side applications, and database integrations with scalable architectures."
+            title="Computer Vision"
+            text="Building real-time detection systems, CNN image classification, and medical/agricultural imaging solutions with OpenCV and PyTorch."
             className="md:absolute md:top-[450px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6"
             aosType="fade-right"
             aosDelay="200"
@@ -191,8 +191,9 @@ const Expertise = () => {
 
           <TagCard
             number="03"
-            title="AI Tools"
-            text="Leveraging state-of-the-art AI assistants and generative tools like ChatGPT, Claude, GitHub Copilot, Cursor, Antigravity AI, Codex, OpenCode, and Midjourney to accelerate development." className="md:absolute md:top-[700px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3"
+            title="Data & Databases"
+            text="Managing structured & vector databases for AI applications with MySQL, ChromaDB, Pinecone, Pandas, and NumPy."
+            className="md:absolute md:top-[700px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3"
             aosType="fade-left"
             aosDelay="300"
             pathLength={pathLength}
@@ -201,8 +202,8 @@ const Expertise = () => {
 
           <TagCard
             number="04"
-            title="Cloud & Deployment"
-            text="Deploying and managing applications using Docker, GitHub Actions, CI/CD pipelines, cloud platforms, and performance optimization practices."
+            title="Tools & DevOps"
+            text="Deploying low-latency applications and APIs using FastAPI, Docker, LiveKit, Git & GitHub, and modern web frameworks."
             className="md:absolute md:top-[1050px] md:left-[15%] lg:left-[25%] -rotate-1 md:-rotate-3"
             aosType="fade-right"
             aosDelay="400"

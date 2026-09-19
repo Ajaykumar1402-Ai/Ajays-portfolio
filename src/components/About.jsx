@@ -41,9 +41,13 @@ const About = () => {
         <div data-aos="fade-left" data-aos-delay="200" className="flex-1 text-white mt-8 md:mt-0 relative z-20">
           
           <h2 className="text-4xl md:text-5xl  text-black mb-4">Hello!</h2>
-          <p className="text-lg  mb-12 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl  mx-1 tracking-wide uppercase">SHAJITH</span>, a passionate full-stack developer dedicated to crafting clean, functional, and highly scalable web applications.
+          <p className="text-lg  mb-6 leading-relaxed max-w-3xl text-red-50">
+            Hi, my name is <span className="text-black text-xl  mx-1 tracking-wide uppercase">AJAYKUMAR K</span>, an AI & ML Engineer (B.E. CSE AI & ML, CGPA: 8.69/10). Passionate about building real-world AI systems, including multimodal medical diagnostics, real-time voice assistants, and AI-driven collaboration platforms.
           </p>
+          <blockquote className="text-sm md:text-base italic text-black/80 font-serif border-l-2 border-black/40 pl-4 mb-8">
+            "Dream is not that which you see while sleeping — it is something that does not let you sleep." <br />
+            <span className="text-xs not-italic font-sans text-white/90">— Dr. APJ Abdul Kalam</span>
+          </blockquote>
 
           {/* Horizontal Skills Row (Transparent & Large) */}
           <div className="flex items-center gap-10 mt-8">

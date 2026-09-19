@@ -7,47 +7,46 @@ import project3Img from '../assets/project/project3.png';
 const Projects = () => {
   const projects = [
     {
-      title:"AN Spare's & Accessories",
-      subtitle: 'Full-Stack Automotive E-Commerce Platform',
-      description: 'Designed and developed a scalable full-stack e-commerce platform for bike spare parts, car accessories, lubricants, garage tools, and automotive products. The platform includes a powerful admin dashboard for managing products, categories, orders, customers, and website content.',
+      title: 'Collabent',
+      subtitle: 'AI-Powered Collaboration Platform',
+      description: 'AI-powered collaboration platform connecting innovators, developers, designers, and entrepreneurs using intelligent matching to build projects and startups.',
       image: project1Img, 
-      link: 'https://www.anspares.com',
+      link: 'https://github.com/Ajaykumar1402-Ai',
       features: [
-        'Advanced Admin Dashboard for Inventory & Order Management',
-        'Product Search & Smart Filtering',
-        'Razorpay Payment Integration',
-        'Responsive Mobile-First Design & SEO Optimized'
+        'Intelligent Matching Algorithm',
+        'Developer & Entrepreneur Networking',
+        'Startup & Project Building Workflow',
+        'Scalable AI Integration'
       ],
-      techStack: ['Next.js 15', 'TypeScript', 'React', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'shadcn/ui', 'Razorpay'],
+      techStack: ['React', 'Node.js', 'AI Matching', 'Python'],
     },
     {
-      title: 'Mahi Fashion Jewellery',
-      subtitle: 'Full-Stack E-Commerce Platform',
-      description: 'Designed and developed a modern, high-performance e-commerce platform for a fashion jewellery brand. The application delivers a seamless shopping experience with responsive design, fast page loads, secure backend services, and an intuitive admin workflow.',
+      title: 'Veera',
+      subtitle: 'Real-Time AI Voice Assistant',
+      description: 'Low-latency AI voice assistant deployed on mobile via LiveKit. Integrates NLP modules for intent recognition and context-aware responses.',
       image: project2Img, 
-      link: 'https://www.mahifashionjewellery.com',
+      link: 'https://github.com/Ajaykumar1402-Ai',
       features: [
-        'Live metal rates integration',
-        'Responsive UI optimized for mobile, tablet, and desktop',
-        'Product catalog with category-based browsing',
-        'Advanced search and filtering',
-        'Secure backend with real-time database integration'
+        'Low-Latency Voice Communication via LiveKit',
+        'Intent Recognition & Context-Aware Responses',
+        'Mobile App Deployment Integration',
+        'Modular NLP Architecture'
       ],
-      techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Supabase'],
+      techStack: ['LiveKit', 'NLP', 'Python', 'Mobile'],
     },
     {
-      title: 'Ronan Media Service',
-      subtitle: 'Premium Media Agency Website',
-      description: 'Designed and developed a premium digital media agency website showcasing creative services, brand identity, portfolio, and client engagement. The website emphasizes modern aesthetics, smooth animations, responsive layouts, and high performance.',
+      title: 'TB Vision Pro',
+      subtitle: 'Multimodal AI Tuberculosis Detection System',
+      description: 'Fuses chest X-ray image analysis with clinical symptom data for clinical-grade Tuberculosis detection and early screening.',
       image: project3Img, 
-      link: 'https://ronanmediaservice.vercel.app',
+      link: 'https://multimodal-tb-detection-system.vercel.app/',
       features: [
-        'Premium agency-style landing page with modern UI/UX',
-        'Interactive animations & smooth page transitions',
-        'Creative service showcase & portfolio case studies',
-        'High-performance architecture using Next.js & Framer Motion'
+        'Multimodal Fusion of X-ray & Clinical Symptom Data',
+        'Clinical-Grade CNN Detection Pipeline',
+        'Early Screening & Diagnostic Dashboard',
+        'FastAPI & React Web Application'
       ],
-      techStack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Framer Motion', 'Zod', 'Antigravity AI'],
+      techStack: ['Python', 'PyTorch', 'CNN', 'FastAPI', 'React'],
     },
   ];
 

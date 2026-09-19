@@ -4,24 +4,29 @@ import { motion } from 'framer-motion';
 const Certifications = () => {
   const certifications = [
     {
-      title: 'MERN Stack Certified Developer',
-      organization: 'BE-Practical Tech Solutions, Bangalore',
-      description: 'Comprehensive certification covering MongoDB, Express.js, React, and Node.js with hands-on full-stack projects.',
+      title: 'Data Analytics Job Simulation',
+      organization: 'Deloitte · Forage (2026)',
+      description: 'Simulation focused on business data analytics, data visualization, and reporting insights for enterprise decisions.',
     },
     {
-      title: 'Responsive Web Design',
-      organization: 'freeCodeCamp',
-      description: 'Mastered HTML5, CSS3, Flexbox, Grid, and responsive design principles for modern web applications.',
+      title: 'Python Essentials',
+      organization: 'Cisco · Netacad (2025)',
+      description: 'Foundational certification covering Python data structures, OOP principles, and algorithmic problem solving.',
     },
     {
-      title: 'JavaScript Algorithms',
-      organization: 'freeCodeCamp',
-      description: 'Advanced proficiency in JavaScript fundamentals, object-oriented programming, and complex problem solving.',
+      title: 'Artificial Intelligence Fundamentals',
+      organization: 'IBM (2025)',
+      description: 'Core concepts in AI, machine learning paradigms, neural network fundamentals, and AI ethics.',
     },
     {
-      title: 'React Native Development',
-      organization: 'Coursera (Meta)',
-      description: 'Specialization in building scalable, cross-platform mobile applications using the React Native framework.',
+      title: 'C Programming',
+      organization: 'Infosys Springboard (2025)',
+      description: 'Comprehensive proficiency in C programming, memory management, pointers, and data structures.',
+    },
+    {
+      title: 'Digital Edge',
+      organization: 'NASSCOM (2025)',
+      description: 'Digital skill credentials in modern computing technologies, software practices, and industry readiness.',
     },
   ];
 
