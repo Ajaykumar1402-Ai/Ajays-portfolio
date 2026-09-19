@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ResumeModal = ({ isOpen, onClose }) => {
-  const resumeUrl = '/Ajaykumar_K_Resume.pdf';
+  const resumeUrl = `${import.meta.env.BASE_URL}Ajaykumar_K_Resume.pdf`;
 
   // Close modal when pressing Escape key
   useEffect(() => {
