@@ -19,8 +19,8 @@ const Footer = () => {
       </div>
 
       {/* Middle Huge Text */}
-      <div className="w-full flex justify-center items-center py-20 md:py-24 overflow-hidden">
-        <h2 className="text-[18vw] md:text-[14vw] leading-none font-sans  tracking-tighter uppercase select-none text-[#f4f4f4] w-full text-center">
+      <div className="w-full flex justify-center items-center py-12 sm:py-16 md:py-24 overflow-hidden">
+        <h2 className="text-[11.2vw] sm:text-[13vw] md:text-[14vw] leading-none font-sans tracking-tighter uppercase select-none text-[#f4f4f4] w-full text-center whitespace-nowrap">
           AJAYKUMAR K
         </h2>
       </div>
